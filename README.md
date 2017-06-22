@@ -2,10 +2,11 @@
 //#include<conio.h>
 int main()
 {
-  char s[]="ABCDEF";
+  char s[100]="sdklgghf12";
+  //scanf("%s",s);
   int count=0;
   char *p=s;
-  while(*p != NULL)
+  while(*(p) != NULL)
   {
     if(!isdigit(*(p-1)) && isdigit(*p) && isdigit(*(p+1)) && isdigit(*(p+2)) && !isdigit(*(p+3)))
     {
@@ -21,4 +22,4 @@ int main()
   
   return 0;
 }
-}
+
